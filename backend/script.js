@@ -297,7 +297,7 @@ listOfNumber.forEach((number) => {
       if (numbers.operator == null || numbers.operator == "=") {
         console.log(numbers.num1);
       } else {
-        if(num1 == '' && num2 == ''){
+        if(numbers.num1 == '' && numbers.num2 == ''){
 
           return;
         }
@@ -323,7 +323,7 @@ Operators.forEach((Operator) => {
     Operator.addEventListener("click", () => {
       console.log("clicked+");
       if (numbers.operator != null) {
-        if(num1 == '' && num2 == ''){
+        if(numbers.num1 == '' && numbers.num2 == ''){
           numbers.operator = '+';
           return;
         }
@@ -340,7 +340,7 @@ Operators.forEach((Operator) => {
     Operator.addEventListener("click", () => {
       console.log("clicked-");
       if (numbers.operator != null) {
-        if(num1 == '' && num2 == ''){
+        if(numbers.num1 == '' && numbers.num2 == ''){
           numbers.operator = '-';
           return;
         }
@@ -357,7 +357,7 @@ Operators.forEach((Operator) => {
     Operator.addEventListener("click", () => {
       console.log("clicked*");
       if (numbers.operator != null) {
-        if(num1 == '' && num2 == ''){
+        if(numbers.num1 == '' && numbers.num2 == ''){
           numbers.operator = '*';
           return;
         }
@@ -374,7 +374,7 @@ Operators.forEach((Operator) => {
     Operator.addEventListener("click", () => {
       console.log("clicked/");
       if (numbers.operator != null) {
-        if(num1 == '' && num2 == ''){
+        if(numbers.num1 == '' && numbers.num2 == ''){
           numbers.operator = '/';
           return;
         }
