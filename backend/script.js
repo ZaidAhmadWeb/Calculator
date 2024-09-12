@@ -297,6 +297,10 @@ listOfNumber.forEach((number) => {
       if (numbers.operator == null || numbers.operator == "=") {
         console.log(numbers.num1);
       } else {
+        if(num1 == '' && num2 == ''){
+
+          return;
+        }
         operate(numbers.num1, numbers.num2, numbers.operator);
         numbers.operator = "=";
       }
@@ -307,6 +311,7 @@ listOfNumber.forEach((number) => {
       numbers.num1 = "";
       numbers.num2 = "";
       numbers.operator = null;
+      numbers.allexpression = '';
       console.log("All set to null");
     });
   }
