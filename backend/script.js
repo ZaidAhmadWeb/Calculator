@@ -312,6 +312,7 @@ listOfNumber.forEach((number) => {
       numbers.num2 = "";
       numbers.operator = null;
       numbers.allexpression = '';
+      updateDisplay(numbers.allexpression);
       console.log("All set to null");
     });
   }
